@@ -1,3 +1,5 @@
+import hero from '../assets/hero.png';
+
 function loadInitialPage() {
 	const content = document.getElementById('content');
 
@@ -13,7 +15,8 @@ function loadInitialPage() {
 	main.appendChild(heroTagline);
 
 	const heroImage = document.createElement('img');
-	heroImage.src = '../assets/hero.png';
+	heroImage.src = hero;
+	heroImage.alt = 'man holding pizza';
 	main.appendChild(heroImage);
 
 	const heroDescription = document.createElement('p');
