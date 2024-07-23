@@ -1,0 +1,56 @@
+.container {
+	height: 80vh;
+	margin-top: 1em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.text-container {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5em;
+}
+
+h1 {
+	font-family: 'Cartoon Fun';
+	color: var(--red);
+}
+
+.welcome {
+	font-size: 2.4rem;
+}
+
+.title {
+	font-size: 4.8rem;
+	line-height: 5rem;
+}
+
+.hero-img {
+	position: absolute;
+	height: 75%;
+	right: -3em;
+	top: 9em;
+	z-index: -1;
+}
+
+.hero-description {
+	font-size: 1.2rem;
+	max-width: 40ch;
+	color: var(--text);
+	font-family: 'Average Sans';
+}
+
+.menu-btn {
+	background-color: var(--green);
+	border: none;
+	border-radius: 1.5em;
+	padding: 0.5em;
+	width: 13em;
+	color: var(--neutral);
+	font-size: 1.3rem;
+	font-family: 'Cartoon Fun';
+	display: inline-block;
+	box-sizing: border-box;
+	letter-spacing: 1px;
+}

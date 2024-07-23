@@ -1,0 +1,109 @@
+/* 
+px: border widths, fixed-layout, precise images
+%: widths of layout, heights relative to parent, responsive design
+em: paddings, margins, font sizes relative to parent
+rem: font sizes, spacing
+*/
+
+:root {
+	--red: #c70100;
+	--green: #3b6500;
+	--neutral: #fff1f0;
+	--text: #4d0000;
+}
+
+@font-face {
+	font-family: 'Cartoon Fun';
+	src: url('../assets/fonts/cartoon-fun.ttf');
+}
+
+@font-face {
+	font-family: 'Bernie';
+	src: url('../assets/fonts/bernie.otf');
+}
+
+@font-face {
+	font-family: 'Average Sans';
+	src: url('../assets/fonts/average-sans.ttf');
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	background-color: var(--neutral);
+	padding: 3em;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo {
+	color: var(--red);
+	font-family: 'Cartoon Fun';
+	line-height: 1em;
+	font-size: 1.5rem;
+}
+
+nav {
+	font-family: 'Average Sans';
+	display: flex;
+	gap: 2rem;
+	margin-right: 1em;
+}
+
+nav button {
+	background: none;
+	padding: 0;
+	border: none;
+	color: var(--text);
+	font-size: 1.2rem;
+	font-weight: 300;
+}
+
+nav button:hover {
+	color: var(--green);
+}
+
+footer {
+	position: absolute;
+	text-align: center;
+	top: auto;
+}
+
+.directory-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-directory {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.circle {
+	text-align: center;
+	display: inline-block;
+	background: none;
+	border: 1px solid var(--green);
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+}
+
+.circle:hover {
+	cursor: pointer;
+}
+
+#test {
+	background-color: var(--green);
+}

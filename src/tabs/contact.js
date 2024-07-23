@@ -1,6 +1,7 @@
 import facebook from '../../assets/facebook.png';
 import twitter from '../../assets/twitter.png';
 import instagram from '../../assets/instagram.png';
+import renderFooter from './footer.js';
 
 function renderContactPage() {
 	const content = document.getElementById('content');
@@ -62,6 +63,8 @@ function renderContactPage() {
 	main.appendChild(form);
 
 	content.appendChild(main);
+
+	renderFooter();
 }
 
 export default renderContactPage;
