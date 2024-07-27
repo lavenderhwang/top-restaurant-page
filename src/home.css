@@ -54,3 +54,7 @@ h1 {
 	box-sizing: border-box;
 	letter-spacing: 1px;
 }
+
+.menu-btn:hover {
+	cursor: pointer;
+}

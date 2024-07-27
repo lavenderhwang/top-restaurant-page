@@ -3,6 +3,10 @@ import './home.css';
 
 function loadInitialPage() {
 	const content = document.getElementById('content');
+	const nav1 = document.getElementById('nav-1');
+	nav1.classList.add('toggle-nav');
+	const homeBtn = document.getElementById('home-btn');
+	homeBtn.classList.add('show-nav');
 
 	// Create and append main section
 	const main = document.createElement('main');
@@ -41,6 +45,7 @@ function loadInitialPage() {
 
 	const textContainer = document.createElement('div');
 	textContainer.classList.add('text-container');
+
 	textContainer.appendChild(heroHeader);
 	textContainer.appendChild(heroDescription);
 	textContainer.appendChild(menuBtn);

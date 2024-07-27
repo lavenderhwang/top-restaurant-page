@@ -1,0 +1,30 @@
+.pizza-label {
+	font-family: 'Average Sans';
+}
+
+.main {
+	text-align: center;
+}
+
+.grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(2, 1fr);
+	background-color: rgb(255, 179, 179, 0.59);
+	border-radius: 3em;
+	padding-top: 1em;
+	margin-bottom: 1em;
+}
+
+.grid-card {
+	text-align: center;
+}
+
+.grid-card img {
+	width: 65%;
+	object-fit: cover;
+}
+
+.grid-card p {
+	display: none;
+}
